@@ -17,7 +17,7 @@ model User {
   id       Int     @id @default(autoincrement())
   user_id  String  @unique @default(uuid())
   name     String
-  email    String
+  email    String  @unique
   password String
   bio      String?
   likes    Like[]
