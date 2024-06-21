@@ -14,24 +14,28 @@ datasource db {
 }
 
 model User {
-  id       Int     @id @default(autoincrement())
-  user_id  String  @unique @default(uuid())
-  name     String
-  email    String  @unique
-  password String
-  bio      String?
-  likes    Like[]
+  id         Int         @id @default(autoincrement())
+  user_id    String      @unique @default(uuid())
+  name       String
+  email      String      @unique
+  password   String
+  bio        String?
+  likes      Like[]
+  criticisms Criticism[]
 }
 
 model Criticism {
   id           Int      @id @default(autoincrement())
   criticism_id String   @unique @default(uuid())
+  title        String
   content      String
   is_published Boolean
   created_at   DateTime @default(now())
   updated_at   DateTime @updatedAt
   tags         Tag[]
   liked        Like[]
+  author       User     @relation(fields: [author_id], references: [user_id])
+  author_id    String
 }
 
 model Tag {
