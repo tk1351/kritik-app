@@ -6,8 +6,13 @@
 }
 
 .header__container {
-    display: flex;
     padding: 20px 200px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .link {

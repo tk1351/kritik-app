@@ -8,9 +8,14 @@ export default function Home() {
     <div className={styles.container}>
       <header>
         <div className={styles.header__container}>
-          <Link href="/" className={styles.link}>
-            <span className={styles.link__text}>Kritik</span>
-          </Link>
+          <nav className={styles.navigation}>
+            <Link href="/" className={styles.link}>
+              <span className={styles.link__text}>Kritik</span>
+            </Link>
+            <Link href="/" className={styles.link}>
+              Log in
+            </Link>
+          </nav>
         </div>
       </header>
       <main className={styles.main__container}>
