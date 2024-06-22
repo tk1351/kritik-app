@@ -5,3 +5,5 @@ export type BaseSize =
   | "large"
   | "xlarge"
   | "x2large";
+
+export type BaseColor = "primary" | "secondary" | "light";

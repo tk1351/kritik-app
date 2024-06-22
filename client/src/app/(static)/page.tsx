@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/app/_components/parts/Button";
+import { ButtonLink } from "@/app/_components/parts/ButtonLink";
 import { Heading } from "@/app/_components/parts/Heading";
 import { Typography } from "@/app/_components/parts/Typography";
 import styles from "./style.module.css";
@@ -39,10 +39,10 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.buttons__container}>
-          <Button type="button">Register</Button>
-          <Button type="button" color="light">
+          <ButtonLink href="/register">Register</ButtonLink>
+          <ButtonLink href="/register" color="light">
             Log in
-          </Button>
+          </ButtonLink>
         </div>
       </main>
       <footer>
