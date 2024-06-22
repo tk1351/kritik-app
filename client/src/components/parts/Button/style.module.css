@@ -1,0 +1,45 @@
+.button {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.button:disabled {
+    pointer-events: none;
+    opacity: .4;
+}
+
+.xsmall {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.small {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.medium {
+    padding: 14px 28px;
+    font-size: 16px;
+}
+
+.large {
+    padding: 18px 36px;
+    font-size: 18px;
+}
+
+.primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.light {
+    background-color: var(--light);
+    color: var(--primary);
+}
