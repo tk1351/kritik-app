@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { Button } from "@/components/parts/Button";
-import { Typography } from "@/components/parts/Typography";
+import { Button } from "@/app/_components/parts/Button";
+import { Heading } from "@/app/_components/parts/Heading";
+import { Typography } from "@/app/_components/parts/Typography";
 import styles from "./style.module.css";
 
 export default function Home() {
@@ -21,7 +22,9 @@ export default function Home() {
       <main className={styles.main__container}>
         <div className={styles.hero}>
           <div className={styles.hero__content}>
-            <h1>Kritik</h1>
+            <Heading level={1} size="large">
+              Kritik
+            </Heading>
             <Typography size="x2large" bold>
               完全な批評のプラットフォーム
             </Typography>

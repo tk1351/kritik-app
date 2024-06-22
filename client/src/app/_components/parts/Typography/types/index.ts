@@ -1,6 +1,7 @@
 import { ComponentPropsWithRef } from "react";
+import { BaseSize } from "@/app/_types";
 
-type Size = "xsmall" | "small" | "medium" | "large" | "xlarge" | "x2large";
+type Size = BaseSize;
 export type Tag = "p" | "span" | "li";
 export type Props<T extends Tag> = {
   tag?: T;
