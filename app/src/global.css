@@ -1,0 +1,21 @@
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --main: #81876d;
+    --primary: #333629;
+    --secondary: #4b4f3e;
+    --light: #e2e6d7;
+    --sub: #b5bba4;
+    --error: rgb(239 68 68)
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background-color: var(--main);
+}
+

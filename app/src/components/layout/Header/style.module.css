@@ -1,0 +1,18 @@
+.header__container {
+    padding: 20px 200px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.link__text {
+    font-size: 24px;
+}

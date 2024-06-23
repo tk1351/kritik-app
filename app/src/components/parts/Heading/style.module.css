@@ -1,0 +1,26 @@
+.title {
+    display: block;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.xsmall {
+    font-size: 14px;
+}
+
+.small {
+    font-size: 18px;
+}
+
+.medium {
+    font-size: 24px;
+}
+
+.large {
+    font-size: 32px;
+}
+
+.xlarge {
+    font-size: 48px;
+}
