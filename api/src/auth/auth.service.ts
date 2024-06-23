@@ -27,4 +27,17 @@ export class AuthService {
       };
     }
   }
+
+  async getProfile(user_id: string) {
+    return this.prisma.user.findUnique({
+      where: { user_id },
+      select: {
+        user_id: true,
+        name: true,
+        bio: true,
+        likes: true,
+        criticisms: true,
+      },
+    });
+  }
 }

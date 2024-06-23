@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import { ReactNode } from "react";
-import * as Layout from "../_components/layout";
-import "../reset.css";
-import "../globals.css";
+import * as Layout from "../../_components/layout";
+import "../../reset.css";
+import "../../globals.css";
 import styles from "./layout.module.css";
 
 const notoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
